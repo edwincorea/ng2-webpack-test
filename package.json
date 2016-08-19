@@ -1,0 +1,48 @@
+{
+  "name": "ng2-webpack-test",
+  "version": "1.0.0",
+  "description": "Setting up Angular 2 with webpack",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint ./src/**/*.ts",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
+    "test": "karma start ./karma/karma.conf.js",
+    "test:headless": "karma start ./karma/karma.conf.js --browsers PhantomJS"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/platform-browser": "^2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "es6-shim": "^0.35.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-beta.6",
+    "zone.js": "^0.6.14"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1",
+    "eslint-config-standard": "^6.0.0-beta.3",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "html-webpack-plugin": "^2.22.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "phantomjs-prebuilt": "^2.1.12",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^0.8.2",
+    "tslint": "^3.14.0",
+    "tslint-loader": "^2.1.5",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
